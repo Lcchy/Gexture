@@ -1,0 +1,44 @@
+{
+	"name" : "gexture_pkg",
+	"displayname" : "",
+	"version" : "0.4.9",
+	"author" : "Lcchy",
+	"authors" : [  ],
+	"description" : "Max 8 external for automatic k-shot gesture classification of MPU-6050 real-time measurement data.",
+	"tags" : [  ],
+	"website" : "https://github.com/Lcchy/Gexture",
+	"extends" : "",
+	"extensible" : 0,
+	"max_version_min" : "8.0",
+	"max_version_max" : "none",
+	"os" : 	{
+		"macintosh" : 		{
+			"min_version" : "none",
+			"platform" : [ "x64" ]
+		}
+,
+		"windows" : 		{
+			"min_version" : "none",
+			"platform" : [ "x64" ]
+		}
+
+	}
+,
+	"homepatcher" : "",
+	"package_extra" : 	{
+		"reverse_domain" : "",
+		"copyright" : ""
+	}
+,
+	"filelist" : 	{
+		"externals" : [ "gexture_pkg.gexture" ],
+		"help" : [ "gexture_pkg.gexture.maxhelp" ],
+		"misc" : [  ],
+		"docs" : [ "gexture_pkg.gexture.maxref" ],
+		"javascript" : [  ],
+		"extras" : [  ]
+	}
+,
+	"c74install" : 1,
+	"installdate" : 3668483798
+}
