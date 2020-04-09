@@ -1,3 +1,17 @@
+###----- Grt (third party) official .gitignore -----
+
+objs
+libgrt.a
+*.out
+*.DS_Store
+*.o
+moc*
+build/examples/*.txt
+build/examples/*.csv
+build/examples/*.grt
+obj/
+libs/
+
 ###----- C++ official .gitignore -----
 
 # Prerequisites
