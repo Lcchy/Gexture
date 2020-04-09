@@ -1,0 +1,34 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake
+C:/Users/chaum/Dropbox/Informatique/Gexture/.git/HEAD
+C:/Users/chaum/Dropbox/Informatique/Gexture/.git/refs/heads/master
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/CMakeLists.txt
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build/CMakeFiles/3.17.0-rc2/CMakeCCompiler.cmake
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build/CMakeFiles/3.17.0-rc2/CMakeCXXCompiler.cmake
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build/CMakeFiles/3.17.0-rc2/CMakeRCCompiler.cmake
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build/CMakeFiles/3.17.0-rc2/CMakeSystem.cmake
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build/CMakeFiles/git-data/grabRef.cmake
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/source/min-api/max-api/script/GetGitRevisionDescription.cmake
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/source/min-api/max-api/script/GetGitRevisionDescription.cmake.in
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/source/min-api/max-api/script/git-rev.cmake
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/source/min-api/max-api/script/max-package.cmake
+C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/source/min-api/script/min-package.cmake

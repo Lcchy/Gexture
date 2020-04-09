@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9429D454-6A64-3674-82F0-9E387E11F728}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>API</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/source/min-api/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg -BC:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build --check-stamp-file C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build/source/min-api/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\.git\HEAD;C:\Users\chaum\Dropbox\Informatique\Gexture\.git\refs\heads\master;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\build\source\min-api\CMakeFiles\git-data\grabRef.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\GetGitRevisionDescription.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\GetGitRevisionDescription.cmake.in;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\git-rev.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\max-package.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\script\min-package.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\build\source\min-api\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/source/min-api/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg -BC:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build --check-stamp-file C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build/source/min-api/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\.git\HEAD;C:\Users\chaum\Dropbox\Informatique\Gexture\.git\refs\heads\master;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\build\source\min-api\CMakeFiles\git-data\grabRef.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\GetGitRevisionDescription.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\GetGitRevisionDescription.cmake.in;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\git-rev.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\max-package.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\script\min-package.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\build\source\min-api\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/source/min-api/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg -BC:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build --check-stamp-file C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build/source/min-api/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\.git\HEAD;C:\Users\chaum\Dropbox\Informatique\Gexture\.git\refs\heads\master;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\build\source\min-api\CMakeFiles\git-data\grabRef.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\GetGitRevisionDescription.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\GetGitRevisionDescription.cmake.in;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\git-rev.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\max-package.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\script\min-package.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\build\source\min-api\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/source/min-api/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg -BC:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build --check-stamp-file C:/Users/chaum/Dropbox/Informatique/Gexture/gexture_pkg/build/source/min-api/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\.git\HEAD;C:\Users\chaum\Dropbox\Informatique\Gexture\.git\refs\heads\master;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\build\source\min-api\CMakeFiles\git-data\grabRef.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\GetGitRevisionDescription.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\GetGitRevisionDescription.cmake.in;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\git-rev.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\max-api\script\max-package.cmake;C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\script\min-package.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\build\source\min-api\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_api.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_argument.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_atom.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_attribute.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_attribute_impl.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_buffer.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_buffer_impl.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_catch.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_dataspace.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_dataspace_gain.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_dataspace_none.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_dataspace_time.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_dictionary.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_doc.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_flags.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_graphics.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_impl.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_inlet.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_limit.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_logger.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_message.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_object.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_object_components.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_object_wrapper.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_operator_matrix.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_operator_mc.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_operator_sample.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_operator_ui.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_operator_vector.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_outlet.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_path.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_port.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_queue.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_string.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_symbol.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_texteditor.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_threadsafety.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_time.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_timer.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\c74_min_unittest.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\murmur\Murmur3.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\readerwriterqueue\atomicops.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\readerwriterqueue\benchmarks\ext\1024cores\spscqueue.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\readerwriterqueue\benchmarks\ext\folly\ProducerConsumerQueue.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\readerwriterqueue\benchmarks\systemtime.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\readerwriterqueue\readerwriterqueue.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\readerwriterqueue\tests\common\simplethread.h" />
+    <None Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\source\min-api\include\readerwriterqueue\tests\unittests\minitest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\build\ZERO_CHECK.vcxproj">
+      <Project>{E492F8AA-8564-36C2-82BE-A0DDFCEA5626}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
