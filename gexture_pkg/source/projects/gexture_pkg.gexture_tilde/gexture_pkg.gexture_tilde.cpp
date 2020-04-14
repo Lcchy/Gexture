@@ -93,7 +93,7 @@ public:
 			b.dirty();
 		}
 		else {
-			output.clear();
+			//output.clear();
 		}
 	}
 
