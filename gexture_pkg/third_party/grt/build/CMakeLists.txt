@@ -9,12 +9,12 @@ set(GRT_LIB_NAME grt)
 
 #Set the main options, you can control these dynamically via the command line by passing in the option -DOPTION_NAME=ON
 #e.g., cmake .. -DBUILD_TESTS=ON
-option(BUILD_TESTS “build-unit-tests” ON)
-option(BUILD_EXAMPLES “build-examples” ON)
-option(BUILD_TOOLS “build-tools” ON)
+option(BUILD_TESTS “build-unit-tests” OFF)
+option(BUILD_EXAMPLES “build-examples” OFF)
+option(BUILD_TOOLS “build-tools” OFF)
 option(BUILD_SHARED_LIBS "build-shared-lib" ON)
 option(EXCLUDE_FROM_INSTALL "exclude-from-install" OFF)
-option(BUILD_PYTHON_BINDING "build-python" ON)
+option(BUILD_PYTHON_BINDING "build-python" OFF)
 
 #Setup the default build flags
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} ")
