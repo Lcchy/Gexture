@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Cholesky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\DebugLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\EigenvalueDecomposition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\ErrorLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\InfoLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\LUDecomposition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Metrics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\PeakDetection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\RangeTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\SVD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TestingLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\ThreadPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\ThresholdCrossingDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TimeSeriesClassificationSampleTrimmer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TrainingDataRecordingTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TrainingLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\WarningLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\ClassificationData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\ClassificationDataStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\ClassificationSample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\MatrixFloat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\RegressionData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\RegressionSample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\TimeSeriesClassificationData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\TimeSeriesClassificationSample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\UnlabelledData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\VectorFloat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\BernoulliRBM\BernoulliRBM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\MovementDetector\MovementDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\PrincipalComponentAnalysis\PrincipalComponentAnalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\Tree\Node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\Tree\Tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\ANBC\ANBC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\ANBC\ANBC_Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\AdaBoost\AdaBoost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\AdaBoost\WeakClassifiers\DecisionStump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\AdaBoost\WeakClassifiers\RadialBasisFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\AdaBoost\WeakClassifiers\WeakClassifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\BAG\BAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DTW\DTW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTreeClusterNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTreeNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTreeThresholdNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTreeTripleFeatureNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\FiniteStateMachine\FiniteStateMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\GMM\GMM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\HMM\ContinuousHiddenMarkovModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\HMM\DiscreteHiddenMarkovModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\HMM\HMM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\KNN\KNN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\MinDist\MinDist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\MinDist\MinDistModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\ParticleClassifier\ParticleClassifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\RandomForests\RandomForests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\SVM\LIBSVM\libsvm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\SVM\SVM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\Softmax\Softmax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\SwipeDetector\SwipeDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\ClusterTree\ClusterTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\GaussianMixtureModels\GaussianMixtureModels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\HierarchicalClustering\HierarchicalClustering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\KMeans\KMeans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\SelfOrganizingMap\SelfOrganizingMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ContextModules\Gate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\EnvelopeExtractor\EnvelopeExtractor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\FFT\FFT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\FFT\FFTFeatures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\FFT\FastFourierTransform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\KMeansFeatures\KMeansFeatures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\KMeansQuantizer\KMeansQuantizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\MovementIndex\MovementIndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\MovementTrajectoryFeatures\MovementTrajectoryFeatures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\PCA\PCA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\RBMQuantizer\RBMQuantizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\SOMQuantizer\SOMQuantizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\TimeDomainFeatures\TimeDomainFeatures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\TimeseriesBuffer\TimeseriesBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\ZeroCrossingCounter\ZeroCrossingCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\Classifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\Clusterer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\FeatureExtraction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\GRTBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\GestureRecognitionPipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\MLBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\PostProcessing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\PreProcessing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\Regressifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PostProcessingModules\ClassLabelChangeFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PostProcessingModules\ClassLabelFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PostProcessingModules\ClassLabelTimeoutFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\DeadZone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\Derivative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\DoubleMovingAverageFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\FIRFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\HighPassFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\LeakyIntegrator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\LowPassFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\MedianFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\MovingAverageFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\RMSFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\SavitzkyGolayFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\WeightedAverageFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\ArtificialNeuralNetworks\MLP\MLP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\ArtificialNeuralNetworks\MLP\Neuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\LinearRegression\LinearRegression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\LogisticRegression\LogisticRegression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\MultidimensionalRegression\MultidimensionalRegression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\RegressionTree\RegressionTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\ANBC\ANBC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\ANBC\ANBC_Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\AdaBoost\AdaBoost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\AdaBoost\AdaBoostClassModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\AdaBoost\WeakClassifiers\DecisionStump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\AdaBoost\WeakClassifiers\RadialBasisFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\AdaBoost\WeakClassifiers\WeakClassifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\BAG\BAG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DTW\DTW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTreeClusterNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTreeNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTreeThresholdNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\DecisionTree\DecisionTreeTripleFeatureNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\FiniteStateMachine\FSMParticle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\FiniteStateMachine\FSMParticleFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\FiniteStateMachine\FiniteStateMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\GMM\GMM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\GMM\MixtureModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\HMM\ContinuousHiddenMarkovModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\HMM\DiscreteHiddenMarkovModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\HMM\HMM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\HMM\HMMEnums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\KNN\KNN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\MinDist\MinDist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\MinDist\MinDistModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\ParticleClassifier\ParticleClassifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\ParticleClassifier\ParticleClassifierParticleFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\RandomForests\RandomForests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\SVM\LIBSVM\libsvm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\SVM\SVM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\Softmax\Softmax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\Softmax\SoftmaxModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClassificationModules\SwipeDetector\SwipeDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\ClusterTree\ClusterTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\ClusterTree\ClusterTreeNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\GaussianMixtureModels\GaussianMixtureModels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\HierarchicalClustering\HierarchicalClustering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\KMeans\KMeans.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ClusteringModules\SelfOrganizingMap\SelfOrganizingMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\ContextModules\Gate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\BernoulliRBM\BernoulliRBM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\EvolutionaryAlgorithm\EvolutionaryAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\EvolutionaryAlgorithm\Individual.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\GridSearch\GridSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\LeastSquares\LinearLeastSquares.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\MeanShift\MeanShift.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\MovementDetector\MovementDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\ParticleFilter\Particle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\ParticleFilter\ParticleFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\ParticleSwarmOptimization\PSOParticle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\ParticleSwarmOptimization\ParticleSwarmOptimization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\PrincipalComponentAnalysis\PrincipalComponentAnalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\Tree\Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreAlgorithms\Tree\Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\Classifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\Clusterer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\FeatureExtraction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\GRTBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\GestureRecognitionPipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\MLBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\PostProcessing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\PreProcessing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\CoreModules\Regressifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\ClassificationData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\ClassificationDataStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\ClassificationSample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\MatrixFloat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\RegressionData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\RegressionSample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\TimeSeriesClassificationData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\TimeSeriesClassificationSample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\TimeSeriesPositionTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\UnlabelledData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\Vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\DataStructures\VectorFloat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\EnvelopeExtractor\EnvelopeExtractor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\FFT\FFT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\FFT\FFTFeatures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\FFT\FastFourierTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\KMeansFeatures\KMeansFeatures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\KMeansQuantizer\KMeansQuantizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\MovementIndex\MovementIndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\MovementTrajectoryFeatures\MovementTrajectoryFeatures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\PCA\PCA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\RBMQuantizer\RBMQuantizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\SOMQuantizer\SOMQuantizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\TimeDomainFeatures\TimeDomainFeatures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\TimeseriesBuffer\TimeseriesBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\FeatureExtractionModules\ZeroCrossingCounter\ZeroCrossingCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\GRT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PostProcessingModules\ClassLabelChangeFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PostProcessingModules\ClassLabelFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PostProcessingModules\ClassLabelTimeoutFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\DeadZone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\Derivative.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\DoubleMovingAverageFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\FIRFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\HighPassFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\LeakyIntegrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\LowPassFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\MedianFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\MovingAverageFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\RMSFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\SavitzkyGolayFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\PreProcessingModules\WeightedAverageFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\ArtificialNeuralNetworks\MLP\MLP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\ArtificialNeuralNetworks\MLP\Neuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\LinearRegression\LinearRegression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\LogisticRegression\LogisticRegression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\MultidimensionalRegression\MultidimensionalRegression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\RegressionTree\RegressionTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\RegressionModules\RegressionTree\RegressionTreeNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Cholesky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\CircularBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\ClassTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\ClassificationResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\CommandLineParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\DataType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\DebugLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Dict.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\DynamicType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\EigenvalueDecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\ErrorLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\FileParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\GRTCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\GRTException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\GRTTypedefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\GRTVersionInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\IndexedDouble.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\InfoLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\LUDecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Metrics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\MinMax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Observer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\ObserverManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\PeakDetection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\RangeTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\SVD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TestInstanceResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TestResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TestingLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\ThreadPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\ThresholdCrossingDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TimeSeriesClassificationSampleTrimmer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TimeStamp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TrainingDataRecordingTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TrainingLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\TrainingResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\GRT\Util\WarningLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\chaum\Dropbox\Informatique\Gexture\gexture_pkg\third_party\grt\build\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7F0104CB-6A60-368E-8027-01663212C1BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9AF39BDF-CD2E-3F86-BCEA-737171992E31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
