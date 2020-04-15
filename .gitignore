@@ -1,4 +1,8 @@
-###----- Grt (third party) official .gitignore -----
+###------Max MSP min-devkit specific ####
+externals/
+tests/
+
+###-----Grt (third party) official .gitignore
 
 objs
 libgrt.a
@@ -6,48 +10,13 @@ libgrt.a
 *.DS_Store
 *.o
 moc*
-gexture_pkg/third_party/grt/build/examples/*.txt
-gexture_pkg/third_party/grt/build/examples/*.csv
-gexture_pkg/third_party/grt/build/examples/*.grt
-gexture_pkg/third_party/grt/obj/
-gexture_pkg/third_party/grt/libs/
+third_party/grt/build/examples/*.txt
+third_party/grt/build/examples/*.csv
+third_party/grt/build/examples/*.grt
+third_party/grt/obj/
+third_party/grt/libs/
 
-###----- C++ official .gitignore -----
-
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Created by https://www.gitignore.io/api/c++,windows,visualstudio
+# ------Created by https://www.gitignore.io/api/c++,windows,visualstudio
 # Edit at https://www.gitignore.io/?templates=c++,windows,visualstudio
 
 ### C++ ###
