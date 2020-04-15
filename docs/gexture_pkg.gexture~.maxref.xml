@@ -36,8 +36,8 @@
 		</method>
 
 		<method name='float'>
-			<digest>Toggle the recording attribute</digest>
-			<description>Toggle the recording attribute. </description>
+			<digest>Classify the incoming gestures</digest>
+			<description>Classify the incoming gestures. </description>
 		</method>
 
 	</methodlist>
@@ -53,8 +53,18 @@
 		</attribute>
 
 		<attribute name='record' get='1' set='1' type='long' size='1' >
-			<digest>Record into the loop </digest>
-			<description>Record into the loop </description>
+			<digest>Start recording into given class label</digest>
+			<description>Start recording into given class label. </description>
+		</attribute>
+
+		<attribute name='train' get='1' set='1' type='long' size='1' >
+			<digest>Train the classifier on the dataset</digest>
+			<description>Train the classifier on the dataset. </description>
+		</attribute>
+
+		<attribute name='classify' get='1' set='1' type='long' size='1' >
+			<digest>Classify the incoming gestures</digest>
+			<description>Classify the incoming gestures. </description>
 		</attribute>
 
 	</attributelist>
