@@ -20,6 +20,7 @@ public:
 
 	//Agent Constructor (interactive instanciation)
 	gexturer() {
+		//Get file paths from user
 		cout << "Please enter the Traning file path : ";
 		cin >> training_file;
 		cout << "Please enter the Input file path : ";
@@ -28,18 +29,21 @@ public:
 		cin >> output_file;
 
 		//Create a new DTW instance, using the default parameters
-		DTW dtw = DTW(false, true);
+		dtw = DTW(false, true);
 
-		//Load some training data to train the classifier - the DTW uses TimeSeriesClassificationData
-		TimeSeriesClassificationData trainingData = TimeSeriesClassificationData(7, "training_gestures");
-
+		//Load and prepare the training data - the DTW uses TimeSeriesClassificationData
+		trainingData.loadDatasetFromCSVFile(training_file);
 		dtw.enableTrimTrainingData(true, 0.1, 90);
-		TimeSeriesClassificationData testData = trainingData.split(80);
-	}
+		testData = trainingData.split(80);
+
+		//Load the input data
+		MatrixFloat input_data;
+		input_data.loadFromCSVFile(input_file, ', ');
+
+	};
 
 	void train() {
 		//Train the classifier on the recorded gestures
-		//--> Set infotext of trainingData here
 
 		if (!dtw.train(trainingData)) {
 			cout << "Failed to train the classifier!\n" << endl;
@@ -76,11 +80,11 @@ int main()
 
 	agent.train();
 
-	//Main signal routine
-	for (int i = 0; )
-		//Main signal classifying routine (placeholder)
-		MatrixFloat input_gesture = MatrixFloat();;
-		//-->input_gesture.MatrixFloat(in);
-		agent.dtw.predict(input_gesture);
-		//-->out = Vect(&dtw.getPredictedClassLabel())
-}
+	/*Main signal routine
+	-->input_gesture.MatrixFloat(in);
+	agent.dtw.predict(input_gesture);
+	cout << Vect(&dtw.getPredictedClassLabel()) << endl*/
+
+
+	return 0;
+};
