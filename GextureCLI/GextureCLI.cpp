@@ -11,12 +11,16 @@ using namespace GRT;
 class gexturer {
 public:
 	//Declare flags and filenames
+	bool debug = true;
+	bool stat_validate = false;
 	string training_file;
 	string input_file;
 	string output_file;
+	string validation_file;
 	DTW dtw;
 	TimeSeriesClassificationData trainingData;
 	TimeSeriesClassificationData testData;
+	MatrixFloat input_data;
 
 	//Agent Constructor (interactive instanciation)
 	gexturer() {
@@ -27,28 +31,38 @@ public:
 		cin >> input_file;
 		cout << "Please enter the Output file path : ";
 		cin >> output_file;
+		cout << "If necessary, please enter the Validation file path : ";
+		cin >> validation_file;
+
+		if (debug) {
+			training_file = "data/training_data.csv";
+			input_file = "data/input_data.csv";
+			validation_file = "data/validation_data.csv";
+		}
 
 		//Create a new DTW instance, using the default parameters
 		dtw = DTW(false, true);
 
-		//Load and prepare the training data - the DTW uses TimeSeriesClassificationData
-		trainingData.loadDatasetFromCSVFile(training_file);
-		dtw.enableTrimTrainingData(true, 0.1, 90);
-		testData = trainingData.split(80);
-
-		//Load the input data
-		MatrixFloat input_data;
-		input_data.loadFromCSVFile(input_file, ', ');
-
+		load_prepare_data();
 	};
 
-	void train() {
-		//Train the classifier on the recorded gestures
-
-		if (!dtw.train(trainingData)) {
-			cout << "Failed to train the classifier!\n" << endl;
+	void load_prepare_data() {
+		//Load and prepare the training data - the DTW uses TimeSeriesClassificationData
+		if (!trainingData.loadDatasetFromCSVFile(training_file)) {
+			cout << "Failed to load the training data from file!\n" << endl;
 		}
+		if (!dtw.enableTrimTrainingData(true, 0.1, 90)) {
+			cout << "Failed to trim the training data!\n" << endl;
+		}
+		testData = trainingData.split(80);
 
+		//Load the input data from file
+		if (!input_data.loadFromCSVFile(input_file, ', ')) {
+			cout << "Failed to load the input data from file!\n" << endl;
+		}
+	}
+
+	void validate() {
 		//Use the test dataset to test the DTW model
 		double accuracy = 0;
 		for (UINT i = 0; i < testData.getNumSamples(); i++) {
@@ -78,13 +92,23 @@ int main()
 {
 	gexturer agent = gexturer();
 
-	agent.train();
+	//Train, validate and predict
+	if (!agent.dtw.train(agent.trainingData)) {
+		cout << "Failed to train the classifier!\n" << endl;
+	}
 
-	/*Main signal routine
-	-->input_gesture.MatrixFloat(in);
-	agent.dtw.predict(input_gesture);
-	cout << Vect(&dtw.getPredictedClassLabel()) << endl*/
-
+	agent.validate();
+	
+	if (!agent.dtw.predict(agent.input_data)) {
+		cout << "Failed to perform prediction for input sample!\n";
+	}
+	cout << "Predicted Class Label for Input: " << agent.dtw.getPredictedClassLabel() << endl;
+	
+	if (agent.stat_validate) {
+		agent.testData.loadDatasetFromCSVFile(agent.validation_file);
+		cout << "----- Statistical validation -----\n" << endl;
+		agent.validate();
+	}
 
 	return 0;
 };
