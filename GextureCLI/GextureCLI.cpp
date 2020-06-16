@@ -18,8 +18,8 @@ public:
 	string output_file;
 	string validation_file;
 	DTW dtw;
-	TimeSeriesClassificationData trainingData;
-	TimeSeriesClassificationData testData;
+	TimeSeriesClassificationData training_data;
+	TimeSeriesClassificationData test_data;
 	MatrixFloat input_data;
 
 	//Agent Constructor (interactive instanciation)
@@ -48,13 +48,13 @@ public:
 
 	void load_prepare_data() {
 		//Load and prepare the training data - the DTW uses TimeSeriesClassificationData
-		if (!trainingData.loadDatasetFromCSVFile(training_file)) {
+		if (!training_data.loadDatasetFromCSVFile(training_file)) {
 			cout << "Failed to load the training data from file!\n" << endl;
 		}
 		if (!dtw.enableTrimTrainingData(true, 0.1, 90)) {
 			cout << "Failed to trim the training data!\n" << endl;
 		}
-		testData = trainingData.split(80);
+		test_data = training_data.split(80);
 
 		//Load the input data from file
 		if (!input_data.loadFromCSVFile(input_file, ', ')) {
@@ -65,10 +65,10 @@ public:
 	void validate() {
 		//Use the test dataset to test the DTW model
 		double accuracy = 0;
-		for (UINT i = 0; i < testData.getNumSamples(); i++) {
+		for (UINT i = 0; i < test_data.getNumSamples(); i++) {
 			//Get the i'th test sample - this is a timeseries
-			UINT classLabel = testData[i].getClassLabel();
-			MatrixDouble timeseries = testData[i].getData();
+			UINT class_label = test_data[i].getClassLabel();
+			MatrixDouble timeseries = test_data[i].getData();
 
 			//Perform a prediction using the classifier
 			if (!dtw.predict(timeseries)) {
@@ -76,15 +76,15 @@ public:
 			}
 
 			//Get the predicted class label
-			UINT predictedClassLabel = dtw.getPredictedClassLabel();
-			double maximumLikelihood = dtw.getMaximumLikelihood();
+			UINT predicted_class_label = dtw.getPredictedClassLabel();
+			double maximum_likelihood = dtw.getMaximumLikelihood();
 			//Update the accuracy
-			if (classLabel == predictedClassLabel) accuracy++;
+			if (class_label == predicted_class_label) accuracy++;
 
-			cout << "TestSample: " << i << "\tClassLabel: " << classLabel << "\tPredictedClassLabel: " << predictedClassLabel << "\tMaximumLikelihood: " << maximumLikelihood << endl;
+			cout << "TestSample: " << i << "\tClassLabel: " << class_label << "\tPredictedClassLabel: " << predicted_class_label << "\tMaximumLikelihood: " << maximum_likelihood << endl;
 		}
 
-		cout << "Test Accuracy: " << accuracy / double(testData.getNumSamples()) * 100.0 << "%" << endl;
+		cout << "Test Accuracy: " << accuracy / double(test_data.getNumSamples()) * 100.0 << "%" << endl;
 	};
 };
 
@@ -93,7 +93,7 @@ int main()
 	gexturer agent = gexturer();
 
 	//Train, validate and predict
-	if (!agent.dtw.train(agent.trainingData)) {
+	if (!agent.dtw.train(agent.training_data)) {
 		cout << "Failed to train the classifier!\n" << endl;
 	}
 
@@ -104,8 +104,9 @@ int main()
 	}
 	cout << "Predicted Class Label for Input: " << agent.dtw.getPredictedClassLabel() << endl;
 	
+	//Optional further statistical validation from file
 	if (agent.stat_validate) {
-		agent.testData.loadDatasetFromCSVFile(agent.validation_file);
+		agent.test_data.loadDatasetFromCSVFile(agent.validation_file);
 		cout << "----- Statistical validation -----\n" << endl;
 		agent.validate();
 	}
