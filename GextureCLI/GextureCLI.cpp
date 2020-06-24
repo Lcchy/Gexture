@@ -25,23 +25,36 @@ public:
 	//Agent Constructor (interactive instanciation)
 	gexturer() {
 		//Get file paths from user
-		cout << "Please enter the Traning file path : ";
-		cin >> training_file;
-		cout << "Please enter the Input file path : ";
-		cin >> input_file;
-		cout << "Please enter the Output file path : ";
-		cin >> output_file;
-		cout << "If necessary, please enter the Validation file path : ";
-		cin >> validation_file;
+		// cout << "Please enter the Traning file path : ";
+		// cin >> training_file;
+		// cout << "Please enter the Input file path : ";
+		// cin >> input_file;
+		// cout << "Please enter the Output file path : ";
+		// cin >> output_file;
+		// cout << "If necessary, please enter the Validation file path : ";
+		// cin >> validation_file;
 
 		if (debug) {
-			training_file = "data/training_data.csv";
+			training_file = "data/prepared_real_data.csv";
 			input_file = "data/input_data.csv";
 			validation_file = "data/validation_data.csv";
 		}
 
 		//Create a new DTW instance, using the default parameters
-		dtw = DTW(false, true);
+		dtw = DTW();
+
+		// Smooth a bit the acceleration ! + K fold validation
+
+		dtw.enableScaling(true); //set external ranges ?
+		dtw.enableNullRejection(true);
+		dtw.setOffsetTimeseriesUsingFirstSample(true);
+		dtw.enableZNormalization(true, false);
+		if (!dtw.enableTrimTrainingData(true, 0.1, 90)) { // optimize params
+			cout << "Failed to trim the training data!\n" << endl;
+		}
+
+		dtw.setWarpingRadius(0);
+		dtw.setContrainWarpingPath(false);
 
 		load_prepare_data();
 	};
@@ -51,8 +64,8 @@ public:
 		if (!training_data.loadDatasetFromCSVFile(training_file)) {
 			cout << "Failed to load the training data from file!\n" << endl;
 		}
-		if (!dtw.enableTrimTrainingData(true, 0.1, 90)) {
-			cout << "Failed to trim the training data!\n" << endl;
+		if (!dtw.enableZNormalization(true)) {
+			cout << "Failed to enable z-normalization!\n" << endl;
 		}
 		test_data = training_data.split(80);
 
