@@ -30,11 +30,6 @@
 
 	<methodlist>
 
-		<method name='set'>
-			<digest>Choose a named buffer~ from which to read</digest>
-			<description>Choose a named buffer~ from which to read. </description>
-		</method>
-
 		<method name='float'>
 			<digest>Classify the incoming gestures</digest>
 			<description>Classify the incoming gestures. </description>
@@ -47,12 +42,7 @@
 
 	<attributelist>
 
-		<attribute name='length' get='1' set='1' type='float64' size='1' >
-			<digest>Length of the buffer~ in milliseconds</digest>
-			<description>Length of the buffer~ in milliseconds. </description>
-		</attribute>
-
-		<attribute name='record' get='1' set='1' type='long' size='1' >
+		<attribute name='start_record' get='1' set='1' type='long' size='1' >
 			<digest>Start recording into given class label</digest>
 			<description>Start recording into given class label. </description>
 		</attribute>
@@ -60,6 +50,11 @@
 		<attribute name='train' get='1' set='1' type='long' size='1' >
 			<digest>Train the classifier on the dataset</digest>
 			<description>Train the classifier on the dataset. </description>
+		</attribute>
+
+		<attribute name='save_rec' get='1' set='1' type='long' size='1' >
+			<digest>Save the recorder gestures into the class given at start</digest>
+			<description>Save the recorder gestures into the class given at start. </description>
 		</attribute>
 
 		<attribute name='classify' get='1' set='1' type='long' size='1' >
