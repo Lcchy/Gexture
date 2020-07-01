@@ -71,6 +71,18 @@ TimeSeriesClassificationData& TimeSeriesClassificationData::operator=(const Time
     return *this;
 }
 
+std::string TimeSeriesClassificationData::getLastWarningMessage() const {
+    return warningLog.getLastMessage();
+}
+
+std::string TimeSeriesClassificationData::getLastErrorMessage() const {
+    return errorLog.getLastMessage();
+}
+    
+std::string TimeSeriesClassificationData::getLastDebugMessage() const {
+    return debugLog.getLastMessage();
+}
+
 void TimeSeriesClassificationData::clear(){
 	totalNumSamples = 0;
 	data.clear();

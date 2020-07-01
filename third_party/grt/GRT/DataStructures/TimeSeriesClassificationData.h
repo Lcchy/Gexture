@@ -95,6 +95,27 @@ public:
 	}
 
     /**
+	 This function returns the last warning message as a std::string. If no warnings have occured, the std::string will be empty.
+     
+     @return returns the last warning message as a std::string.
+     */
+    std::string getLastWarningMessage() const;
+    
+    /**
+	 This function returns the last error message as a std::string. If no errors have occured, the std::string will be empty.
+     
+     @return returns the last error message as a std::string.
+     */
+    std::string getLastErrorMessage() const;
+    
+    /**
+	 This function returns the last debug message as a std::string. If no debug messages have occured, the std::string will be empty.
+     
+     @return returns the last debug message as a std::string.
+     */
+    std::string getLastDebugMessage() const;
+
+    /**
      Clears any previous training data and counters
      */
 	void clear();
