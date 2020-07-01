@@ -20,6 +20,7 @@ public:
 	DTW dtw;
 	TimeSeriesClassificationData training_data;
 	TimeSeriesClassificationData test_data;
+	TimeSeriesClassificationData validation_data;
 	MatrixFloat input_data;
 
 	//Agent Constructor (interactive instanciation)
@@ -37,13 +38,14 @@ public:
 		if (debug) {
 			training_file = "data/prepared_real_data.csv";
 			input_file = "data/input_data.csv";
-			validation_file = "data/validation_data.csv";
+			validation_file = "data/prepared_real_data_validate.csv";
 		}
 
 		//Create a new DTW instance, using the default parameters
 		dtw = DTW();
 
 		// Smooth a bit the acceleration ! + K fold validation
+		// using dtw.smoothData
 
 		dtw.enableScaling(true); //set external ranges ?
 		dtw.enableNullRejection(true);
@@ -69,6 +71,10 @@ public:
 		}
 		test_data = training_data.split(80);
 
+		if (!validation_data.loadDatasetFromCSVFile(validation_file)) {
+			cout << "Failed to load the training data from file!\n" << endl;
+		}
+
 		//Load the input data from file
 		if (!input_data.loadFromCSVFile(input_file, ', ')) {
 			cout << "Failed to load the input data from file!\n" << endl;
@@ -78,10 +84,34 @@ public:
 	void validate() {
 		//Use the test dataset to test the DTW model
 		double accuracy = 0;
-		for (UINT i = 0; i < test_data.getNumSamples(); i++) {
-			//Get the i'th test sample - this is a timeseries
-			UINT class_label = test_data[i].getClassLabel();
-			MatrixDouble timeseries = test_data[i].getData();
+		for (UINT cl = 1; cl <= test_data.getNumClasses(); cl++) {
+			TimeSeriesClassificationData class_test_data = test_data.getClassData(cl);
+			for (UINT i = 0; i < class_test_data.getNumSamples(); i++) {
+				//Get the i'th test sample - this is a timeseries
+				UINT class_label = class_test_data[i].getClassLabel();
+				MatrixDouble timeseries = class_test_data[i].getData();
+
+				//Perform a prediction using the classifier
+				if (!dtw.predict(timeseries)) {
+					cout << "Failed to perform prediction for test sample: " << i << "\n";
+				}
+
+				//Get the predicted class label
+				UINT predicted_class_label = dtw.getPredictedClassLabel();
+				double maximum_likelihood = dtw.getMaximumLikelihood();
+				//Update the accuracy
+				if (class_label == predicted_class_label) accuracy++;
+
+				cout << "TestSample: " << i << "\tClassLabel: " << class_label << "\tPredictedClassLabel: " << predicted_class_label << "\tMaximumLikelihood: " << maximum_likelihood << endl;
+			}
+		}
+		cout << "Test Accuracy: " << accuracy / double(test_data.getNumSamples()) * 100.0 << "%" << endl;
+	};
+	void validate_ext() {
+		double accuracy = 0;
+		for (UINT i = 0; i < validation_data.getNumSamples(); i++) {
+			UINT class_label = validation_data[i].getClassLabel();
+			MatrixDouble timeseries = validation_data[i].getData();
 
 			//Perform a prediction using the classifier
 			if (!dtw.predict(timeseries)) {
@@ -97,25 +127,27 @@ public:
 			cout << "TestSample: " << i << "\tClassLabel: " << class_label << "\tPredictedClassLabel: " << predicted_class_label << "\tMaximumLikelihood: " << maximum_likelihood << endl;
 		}
 
-		cout << "Test Accuracy: " << accuracy / double(test_data.getNumSamples()) * 100.0 << "%" << endl;
+		cout << "Test Accuracy: " << accuracy / double(validation_data.getNumSamples()) * 100.0 << "%" << endl;
 	};
 };
 
+
 int main()
-{
+{	
 	gexturer agent = gexturer();
 
-	//Train, validate and predict
+	// Train, validate and predict
 	if (!agent.dtw.train(agent.training_data)) {
 		cout << "Failed to train the classifier!\n" << endl;
 	}
 
 	agent.validate();
+	// agent.validate_ext();
 	
-	if (!agent.dtw.predict(agent.input_data)) {
-		cout << "Failed to perform prediction for input sample!\n";
-	}
-	cout << "Predicted Class Label for Input: " << agent.dtw.getPredictedClassLabel() << endl;
+	// if (!agent.dtw.predict(agent.input_data)) {
+	// 	cout << "Failed to perform prediction for input sample!\n";
+	// }
+	// cout << "Predicted Class Label for Input: " << agent.dtw.getPredictedClassLabel() << endl;
 	
 	//Optional further statistical validation from file
 	if (agent.stat_validate) {

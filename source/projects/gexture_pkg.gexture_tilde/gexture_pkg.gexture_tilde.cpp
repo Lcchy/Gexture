@@ -6,7 +6,7 @@ using namespace GRT;
 using namespace c74::min;
 
 #define MAX_WINDOW_SIZE 200 	//Longest gestures length in samples (approx)
-#define DATA_DIMENSIONS 7
+#define DATA_DIMENSIONS 1
 #define TRIMING_LOW 0.1
 #define TRIMING_HIGH 0.9
 #define SPLIT_RATIO 0.8
@@ -26,12 +26,14 @@ public:
 	gexturer() {
 		trained = false;
 		gesture_buffer = MatrixFloat(MAX_WINDOW_SIZE, DATA_DIMENSIONS);
+		training_data.setNumDimensions(DATA_DIMENSIONS);
+		test_data.setNumDimensions(DATA_DIMENSIONS);
 		DTW dtw = DTW(false, true);
 	}
 
 	void push_frames_to_buffer(audio_bundle input) {
-	//Pushes the input audio bundle (Max MSP API specific) to the classifier buffer
-		//Verifiy that input has right number of channels
+	// Pushes the input audio bundle (Max MSP API specific) to the classifier buffer
+	// 	Verifiy that input has right number of channels
 		if (input.channel_count() != DATA_DIMENSIONS) {
 			throw std::runtime_error(
 				"Error when loading input, number of channels (" 
@@ -60,7 +62,7 @@ public:
 			}
 			else {
 				//Push the new values at the end of the buffer
-				if (!gesture_buffer.setRowVector(input_samples.getRowVector(i - MAX_WINDOW_SIZE), i)) {
+				if (!gesture_buffer.setRowVector(input_samples.getRowVector(i - MAX_WINDOW_SIZE + input_frame_count), i)) {
 					throw std::runtime_error("Failed to push input data into classifier buffer at row: " + std::to_string(i) + "\n");
 				}
 			}
@@ -163,23 +165,25 @@ public:
 			//Collect input (and output) samples from MAX API
 			//and record input samples into the classifier input buffer
 			gext.push_frames_to_buffer(input);
+
 			auto out_samples = output.samples(0);
 
 			//Add the current recorded gesture sample to the training data with label start_rec (external API)
 			//When done, reinitialize the flags, stop recording and mark classifier as not trained on present data
 			if (save_rec) {
-				gext.add_training_sample(start_record, gext.gesture_buffer);
 				save_rec = false;
+				gext.add_training_sample(start_record, gext.gesture_buffer);
+				c74::min::object<main>::cout << "Succesfully added the training sample into class " << start_record << endl;
 				start_record = 0;
 				gext.trained = false;
 			};
 
 			// Train and validate the classifier. Result is printed in Max console.
 			if (train) {
+				train = false;
 				gext.training();
 				float accuracy = gext.validate();
 				c74::min::object<main>::cout << "Test Accuracy: " << accuracy << "%" << endl;
-				train = false;
 				gext.trained = true;
 			};
 			
@@ -199,9 +203,11 @@ public:
 		catch (const std::runtime_error& e) {
 		//Catching the exceptions thrown by the classifier class here in order to
 		//print them to the custom MAX API cerr (Max console)
+			c74::min::object<main>::cerr << gext.dtw.getLastErrorMessage() << endl;
+			c74::min::object<main>::cerr << gext.training_data.getLastErrorMessage() << endl;
+			c74::min::object<main>::cerr << gext.test_data.getLastErrorMessage() << endl;
 			c74::min::object<main>::cerr << e.what() << endl;
 		}
-
 	}
 };
 
