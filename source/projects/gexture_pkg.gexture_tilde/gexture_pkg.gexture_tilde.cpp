@@ -1,18 +1,21 @@
 #include <string> 
 #include "c74_min.h"
 #include <GRT.h>
+#include <chrono>
+
 
 using namespace GRT;
 using namespace c74::min;
 
-#define MAX_WINDOW_SIZE 200 	//Longest gestures length in samples (approx)
+#define SENSOR_DATA_RATE 100  	// Incoming samplerate of the sensor data, independent of the Max MSP samplerate
+#define MAX_WINDOW_SIZE 200 	// Longest gestures length in samples (approx)
 #define DATA_DIMENSIONS 1
 #define TRIMING_LOW 0.1
-#define TRIMING_HIGH 0.9
-#define SPLIT_RATIO 0.8
+#define TRIMING_HIGH 90
+#define SPLIT_RATIO 80
 
 //Naming convention is inconsistent because of conflicts between dependencies conventions
-//Sample classes are the labels for training
+//Sample classes are the data labels for training
 
 class gexturer {
 public:
@@ -29,18 +32,30 @@ public:
 		training_data.setNumDimensions(DATA_DIMENSIONS);
 		test_data.setNumDimensions(DATA_DIMENSIONS);
 		DTW dtw = DTW(false, true);
+		
+		//Setting the appropriate statistical pre processing here
+		dtw.enableScaling(true); //set external ranges ?
+		dtw.enableNullRejection(true);
+		dtw.setOffsetTimeseriesUsingFirstSample(true);
+		dtw.enableZNormalization(true, false);
+		if (!dtw.enableTrimTrainingData(true, 0.1, 90)) { // optimize params eventually
+			throw std::runtime_error("Failed to trim the training data!\n");
+		}
+
+		dtw.setWarpingRadius(0);
+		dtw.setContrainWarpingPath(false);
 	}
 
-	void push_frames_to_buffer(audio_bundle input) {
+	void push_frames_to_buffer(audio_bundle input, double max_msp_signal_samplerate) {
 	// Pushes the input audio bundle (Max MSP API specific) to the classifier buffer
-	// 	Verifiy that input has right number of channels
+		// 	Verifiy that input has right number of channels
 		if (input.channel_count() != DATA_DIMENSIONS) {
 			throw std::runtime_error(
-				"Error when loading input, number of channels (" 
-				+ std::to_string(input.channel_count()) 
+				"Error when loading input, number of channels ("
+				+ std::to_string(input.channel_count())
 				+ ") must match the data dimension (" + std::to_string(DATA_DIMENSIONS) + ")\n");
 		}
-		//Extract samples from MAX API audio bundle
+		//Extract samples from MAX API audio bundle into temp MatrixFloat "input_samples"
 		int input_frame_count = input.frame_count();
 		MatrixFloat input_samples = MatrixFloat(input_frame_count, DATA_DIMENSIONS);
 		GRT::Vector<GRT::Float> temp_col_samples (input_frame_count, 0);
@@ -80,7 +95,7 @@ public:
 		if (!dtw.enableTrimTrainingData(true, TRIMING_LOW, TRIMING_HIGH)) {
 			throw std::runtime_error("Failed to trim the training data!\n");
 		}
-		test_data = training_data.split(100 * SPLIT_RATIO);
+		test_data = training_data.split(SPLIT_RATIO);
 		if (!dtw.train(training_data)) {
 			throw std::runtime_error("Failed to train the classifier!\n");
 		}
@@ -128,7 +143,7 @@ public:
 	inlet<>  live_inlet {this, "(signal) Live sensor signal to classify"};
 	outlet<> live_output {this, "(signal) Live Id of the recognized gesture", "signal"};
 
-	//Attributes for toggling options (external API)
+	//Attributes for toggling options (Max external API)
 	attribute<int> start_record {this, "start_record", false, description {"Start recording into given class label."}};
 	attribute<bool> save_rec {this, "save_rec", false, description {"Save the recorder gestures into the class given at start."}};
 	attribute<bool> train{ this, "train", false, description {"Train the classifier on the dataset."} };
@@ -161,10 +176,12 @@ public:
 	//Main signal routine on which Max loops through time, feeding signal buffer of inlets as input
 	void operator()(audio_bundle input, audio_bundle output) {
 
+		double max_msp_signal_samplerate = samplerate();
+
 		try {
-			//Collect input (and output) samples from MAX API
+			//Collect input buffers (and output, both containing 64 samples by default) from MAX API
 			//and record input samples into the classifier input buffer
-			gext.push_frames_to_buffer(input);
+			gext.push_frames_to_buffer(input, max_msp_signal_samplerate);
 
 			auto out_samples = output.samples(0);
 
@@ -172,6 +189,13 @@ public:
 			//When done, reinitialize the flags, stop recording and mark classifier as not trained on present data
 			if (save_rec) {
 				save_rec = false;
+				cout << max_msp_signal_samplerate << endl;
+				cout << std::to_string(input.frame_count()) << endl;
+				cout << tdiff_m << endl;
+				cout << tdiff_n << endl;
+				std::chrono::steady_clock::time_point tot_end = std::chrono::steady_clock::now();
+				cout << std::chrono::duration_cast<std::chrono::nanoseconds> (tot_end - tot_begin).count() / counter << endl;
+				
 				gext.add_training_sample(start_record, gext.gesture_buffer);
 				c74::min::object<main>::cout << "Succesfully added the training sample into class " << start_record << endl;
 				start_record = 0;
@@ -186,10 +210,14 @@ public:
 				c74::min::object<main>::cout << "Test Accuracy: " << accuracy << "%" << endl;
 				gext.trained = true;
 			};
-			
+					
+		//Set the vector size of the incoming audio chunk (audio bundle) to be
+		//large enough to reduce the iteration frequency of operator to match the SENSOR_DATA_RATE
+		//That way, the model has enough time to predict and enough data is incoming to extract one sample.
 			// Main prediction output
 			if (gext.trained) {
 				int prediction = gext.prediction(gext.gesture_buffer);
+				cout << prediction << endl;
 				for (int i = 0; i < input.frame_count(); ++i) {
 					out_samples[i] = static_cast<float>(prediction);
 				}
@@ -203,9 +231,15 @@ public:
 		catch (const std::runtime_error& e) {
 		//Catching the exceptions thrown by the classifier class here in order to
 		//print them to the custom MAX API cerr (Max console)
-			c74::min::object<main>::cerr << gext.dtw.getLastErrorMessage() << endl;
-			c74::min::object<main>::cerr << gext.training_data.getLastErrorMessage() << endl;
-			c74::min::object<main>::cerr << gext.test_data.getLastErrorMessage() << endl;
+			if (gext.dtw.getLastErrorMessage() != "") {
+				c74::min::object<main>::cerr << gext.dtw.getLastErrorMessage() << endl;
+			}
+			if (gext.training_data.getLastErrorMessage() != "") {
+				c74::min::object<main>::cerr << gext.training_data.getLastErrorMessage() << endl;
+			}
+			if (gext.test_data.getLastErrorMessage() != "") {
+				c74::min::object<main>::cerr << gext.test_data.getLastErrorMessage() << endl;
+			}
 			c74::min::object<main>::cerr << e.what() << endl;
 		}
 	}
